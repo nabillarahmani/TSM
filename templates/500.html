@@ -12,19 +12,19 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/cs/jquery.fullPage.css"/>
+	<link href="{{ url_for('static', filename='css/jquery.fullPage.css') }}" rel="stylesheet">
 	<!--
 	<link rel="stylesheet" type="text/css" href="assets/cs/jquery.style.css"/>
 	-->
-
-	<!-- JS -->	
-	<script type="text/javascript" src="assets/js/jquery.fullPage.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.fullPage.min.js"></script>
-	<!--
-	<script type="text/javascript" src="assets/js/wow.min.js"></script>
-	<script type="text/javascript" src="assets/js/script.js"></script>
-	-->
 </head>
 <body>
+	Internal Server Error
 </body>
+<!-- JS -->	
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.fullPage.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.fullPage.min.js') }}"></script>
+<!--
+<script type="text/javascript" src="assets/js/wow.min.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+-->
 </html>
