@@ -1,3 +1,3 @@
 web: python tsm.py
-web: gunicorn --pythonpath tsm:create_app --log-file -
+web: gunicorn tsm:create_app 
 heroku ps:scale web=1
