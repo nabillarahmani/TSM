@@ -19,6 +19,14 @@
 </head>
 <body>
 	welcome here!
+	<form action="/send_feedback" method="post" name="feedback">
+		<h4>Registration</h4>
+		{{ form.full_name}}
+		{{ form.subject}}
+		{{ form.email}}
+		{{ form.body}}
+		<p><input type="submit" value="Sign In"></p>
+	</form>
 </body>
 <!-- JS -->	
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.fullPage.js') }}"></script>
