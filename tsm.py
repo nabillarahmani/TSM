@@ -16,14 +16,6 @@ def create_app():
 		'DEBUG': bool,
 		'TESTING': bool
 	})
-	app.config.update(
-		#EMAIL SETTINGS
-		MAIL_SERVER='smtp.gmail.com',
-		MAIL_PORT=465,
-		MAIL_USE_SSL=True,
-		MAIL_USERNAME = 'mitratrisinergi@gmail.com',
-		MAIL_PASSWORD = 'randomlytaken#@!'
-	)
 	mail = Mail(app)
 	mail.init_app(app)
 
