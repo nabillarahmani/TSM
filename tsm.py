@@ -68,5 +68,5 @@ def create_app():
 
 
 if __name__ == "__main__":
-	application = create_app()
-	application.run(host=application.config['HOST'], port=int(application.config['PORT']))
+	app = create_app()
+	app.run(host=app.config['HOST'], port=int(app.config['PORT']))
