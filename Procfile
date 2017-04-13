@@ -1,3 +1,3 @@
-web: python manage.py runserver
-web: gunicorn --pythonpath wsgi --log-file -
+web: python tsm.py
+web: gunicorn --pythonpath wsgi:application --log-file -
 heroku ps:scale web=1

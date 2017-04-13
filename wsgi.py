@@ -1,5 +1,5 @@
 import tsm 
 
 if __name__ == "__main__":
-    app = tsm.create_app()
-	app.run()
+    application = tsm.create_app()
+	application.run()
