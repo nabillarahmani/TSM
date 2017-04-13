@@ -1,1 +1,1 @@
-web: gunicorn tsm:app
+web: gunicorn tsm.py:app
