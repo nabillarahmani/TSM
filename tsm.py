@@ -37,7 +37,7 @@ def create_app():
 			result = request.form['email']
 			msg_subject = "You got an email from {} / {} - {}".format(request.form['email'], request.form['full_name'], request.form['subject'])
 			msg_body = request.form['body']
-			send_email(msg_subject,'mitratrisinergi@gmail.com', ['mitratrisinergi@gmail.com'], msg_body)
+			send_email(msg_subject,'trisinergim@gmail.com', ['trisinergim@gmail.com'], msg_body)
 			return redirect(url_for('index'))
 		else:
 			flash('The message has not been sent due to unknown failure')
