@@ -10,8 +10,6 @@ function onReady(callback) {
 }
 
 function show(id, value) {
-    console.log(id);
-    alert(document.getElementById(id));
     document.getElementById(id).style.display = value ? 'block' : 'none';
 }
 
