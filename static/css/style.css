@@ -243,3 +243,21 @@ p{
 	z-index: 999;
  }
 
+
+#page {
+    display: none;
+}
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 0.5);
+    background-image: url("http://loading.io/loader/?use=eyJzaXplIjo5Miwic3BlZWQiOjIsImNiayI6IiNmZmZmZmYiLCJjMSI6IiNlZGI2NGEiLCJjMiI6IiNmYWYzZTUiLCJjMyI6IiMzMzMzMzMiLCJjNCI6IiNmZjU5NTkiLCJjNSI6MCwiYzYiOjAsInR5cGUiOiJhbmltYWwifQ==");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
