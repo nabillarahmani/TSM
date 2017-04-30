@@ -1,4 +1,4 @@
-function onReady(callback) {
+/*function onReady(callback) {
     var intervalID = window.setInterval(checkReady, 1000);
 
     function checkReady() {
@@ -16,4 +16,16 @@ function show(id, value) {
 onReady(function () {
     show('loading', false);
     show('container_page', true);
-});
+});*/
+
+function main() {
+    setTimeout(function() {
+        document.getElementById('loading').className = 'not_loadded';
+        document.getElementById('container_page').className = 'loaded';
+        setTimeout(function() {
+            document.getElementById('loading').className = 'finished';            
+        }, 1000);
+    }, 2000);
+}
+
+window.onload = main();
