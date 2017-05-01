@@ -14,29 +14,33 @@
 	<link href="{{ url_for('static', filename='css/jquery.fullPage.css') }}" rel="stylesheet">
 	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
 	<link href="{{ url_for('static', filename='css/loading.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css/animate.css') }}" rel="stylesheet">
 	
 </head>
 <body>
 	<div id="loading">
-		<img src="{{url_for('static', filename='img/TriSinergiMitra.png') }}"" alt="logo" />
+		<img src="{{url_for('static', filename='img/TriSinergiMitra.png') }}"" alt="logo" class="logo" />
 		<img class="gif" src="{{url_for('static', filename='img/ring-alt.gif') }}"" alt="loading" />
 	</div>
 	<div id="container_page">
 		<ul id="menu">
 				<li data-menuanchor="home"><a href="#home">Home</a></li>
 				<li data-menuanchor="about_us"><a href="#about_us">About</a></li>
-				<li data-menuanchor="our_services"><a href="#our_services">What We Do</a></li>
+				<li data-menuanchor="our_services"><a href="#our_services">Our Services</a></li>
 				<li data-menuanchor="gallery"><a href="#gallery">Gallery</a></li>
 				<li data-menuanchor="contact_us"><a href="#contact_us">Contact Us</a></li>
 		</ul>
-
+		
 		<div id="fullpage">	
-			<div class="section">
-				
-				<h2>TSM atau Tri Sinergi Mitra adalah sebuah perusahaan bisnis konsultan.</h2>
+			<div class="section" id="section1">
+				<img src="{{url_for('static', filename='img/TriSinergiMitra.png') }}"" alt="logo"/>
+				<h2>
+					Quality, Trust, and Expertise.
+				</h2>
+
 			</div>
 
-			<div class="section">
+			<div class="section" id="section2">
 				<h2>TSM atau Tri Sinergi Mitra adalah sebuah perusahaan bisnis konsultan.</h2>
 			</div>
 			
@@ -74,21 +78,15 @@
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.fullPage.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.fullPage.min.js') }}"></script>
-<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script> 
+<script type="text/javascript" src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
 <!-- JS -->	
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				sectionsColor: ['#9ee2f7', '#afeae0', '#8fe0d4','#b8efed', '#aae1ef'],
-				anchors: ['home', 'about_us', 'our_services', 'gallery', 'contact_us'],
-				menu: '#menu',
-				scrollingSpeed: 850
-				
-			});
-		});
-	</script>
-<!--
-<script type="text/javascript" src="assets/js/wow.min.js"></script>
-<script type="text/javascript" src="assets/js/script.js"></script>
+<script type="text/javascript">
+	
+</script>
+<script>
+	new WOW().init();
+</script>
+
 -->
 </html>
